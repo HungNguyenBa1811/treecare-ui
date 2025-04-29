@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "normalize.css"
+
+@layer utilities {
+    .filter {
+        filter: var(--tw-filter);
+    }
+    .drop-shadow-green {
+        --tw-drop-shadow: drop-shadow(0 4px 4px rgba(0, 128, 0, 0.6));
+        filter: var(--tw-filter) var(--tw-drop-shadow);
+    }
+}
