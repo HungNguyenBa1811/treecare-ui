@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="w-full flex flex-col md:flex-row justify-between px-4 md:px-32 pt-10 pb-6">
+        <footer className="w-full flex flex-col justify-between px-4 pt-10 pb-6 lg:px-32 lg:flex-row">
             <div className="mb-6 md:mb-0">
                 <div>
                     <p className="font-bold text-2xl uppercase">
@@ -16,7 +16,7 @@ export default function Footer() {
                     Social Icon
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-16">
+            <div className="flex flex-col justify-between gap-8 md:flex-row md:gap-16">
                 <div>
                     <p className="text-lg font-semibold uppercase truncate">Home</p>
                     <ul className="text-sm font-semibold pt-3 flex flex-col gap-2">
