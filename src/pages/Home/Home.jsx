@@ -11,29 +11,31 @@ export default function Home() {
     return (
         <div className="w-full flex flex-col gap-5">
             <div className="w-full flex flex-row flex-wrap relative">
-                <div className="w-full flex flex-col">
-                    <div className="flex flex-col justify-center px-32 pt-24">
-                        <p className="uppercase text-6xl font-bold max-w-1/2">Detect. Protect.</p>
-                        <p className="uppercase text-6xl font-bold max-w-1/2">Grow <span className="text-lime-500">Green</span>.</p>
-                        <p className="text-neutral-500 py-10 max-w-1/3">TreeCare is an innovative AI-powered app that helps users diagnoses and treat diseases on trees.</p>
-                    </div>
-                    <div className="flex flex-row gap-8 px-32 pt-5">
-                        <Link to={'/demo'}>
-                            <button className="uppercase bg-lime-500 px-14 py-5 rounded-xl text-white font-semibold hover:shadow-2xl hover:cursor-pointer">Try it out</button>
-                        </Link>
-                        <div onClick={handleRickRoll} className="flex flex-row gap-3 hover:cursor-pointer">
-                            <div className="flex justify-center items-center rounded-full w-14 h-14 bg-black">
-                                <PlayIcon className="w-4"/>
-                            </div>
-                            <div className="flex items-center">
-                                <p className="leading-none max-w-3/4 text-neutral-500">Learn how to take care a plant</p>
+                <div className="w-full flex flex-col-reverse flex-wrap">
+                    <div>
+                        <div className="flex flex-col flex-wrap justify-center px-12 sm:px-32 pt-24">
+                            <p className="uppercase text-6xl font-bold max-w-full lg:max-w-1/2">Detect. <br /> Protect.</p>
+                            <p className="uppercase text-6xl font-bold max-w-full lg:max-w-1/2">Grow <span className="text-lime-500">Green</span>.</p>
+                            <p className="text-neutral-500 py-10 max-w-full xl:max-w-1/3">TreeCare is an innovative AI-powered app that helps users diagnoses and treat diseases on trees.</p>
+                        </div>
+                        <div className="flex flex-row flex-wrap-reverse gap-8 px-12 sm:px-32 pt-5 justify-center lg:justify-start">
+                            <Link to={'/demo'}>
+                                <button className="uppercase bg-lime-500 px-14 py-5 rounded-xl text-white font-semibold hover:shadow-2xl hover:cursor-pointer">Try it out</button>
+                            </Link>
+                            <div onClick={handleRickRoll} className="flex flex-row justify-center sm:justify-start gap-3 hover:cursor-pointer">
+                                <div className="flex justify-center items-center rounded-full w-14 h-14 bg-black">
+                                    <PlayIcon className="w-4"/>
+                                </div>
+                                <div className="flex items-center justify-center max-w-1/2 sm:justify-start sm:max-w-3/4">
+                                    <p className="leading-none text-neutral-500">Learn how to take care a plant</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="lg:absolute right-40 -top-5 z-1 filter drop-shadow-[0_0_200px_rgba(163,230,53,0.7)]">
-                        <img src="./TreeCarePot.png" alt="" className="w-140 "/>
+                    <div className="flex justify-center xl:absolute xl:right-40 xl:-top-5 z-1 filter drop-shadow-[0_0_200px_rgba(163,230,53,0.7)]">
+                        <img src="./TreeCarePot.png" alt="" className="w-140"/>
                     </div>
-                    <div className="absolute top-4 right-20 flex flex-row gap-2 pt-1 pr-4 z-2 rounded-2xl hover:cursor-pointer hover:shadow-2xl hover:bg-white">
+                    <div className="absolute top-4 right-20 pt-1 pr-4 z-2 rounded-2xl hidden xl:flex xl:flex-row xl:gap-2  hover:cursor-pointer hover:shadow-2xl hover:bg-white">
                         <div className="flex justify-center items-center">
                             <WeatherIcon />
                         </div>
@@ -42,7 +44,7 @@ export default function Home() {
                             <p className="font-semibold">9 to 10 Days</p>
                         </div>
                     </div>
-                    <div className="absolute top-24 right-160 flex flex-row gap-2 py-2 px-4 z-2 rounded-2xl hover:cursor-pointer hover:shadow-2xl hover:bg-white">
+                    <div className="absolute top-24 right-160 py-2 px-4 z-2 rounded-2xl hidden xl:flex xl:flex-row xl:gap-2 hover:cursor-pointer hover:shadow-2xl hover:bg-white">
                         <div className="flex justify-center items-center">
                             <SunIcon />
                         </div>
@@ -51,7 +53,7 @@ export default function Home() {
                             <p className="font-semibold">9 to 10 Hours</p>
                         </div>
                     </div>
-                    <div className="absolute top-72 right-168 flex flex-row gap-2 py-2 px-4 z-2 rounded-2xl hover:cursor-pointer hover:shadow-2xl hover:bg-white">
+                    <div className="absolute top-72 right-168 py-2 px-4 z-2 rounded-2xl hidden xl:flex xl:flex-row xl:gap-2 hover:cursor-pointer hover:shadow-2xl hover:bg-white">
                         <div className="flex justify-center items-center">
                             <DropletIcon />
                         </div>
@@ -60,13 +62,13 @@ export default function Home() {
                             <p className="font-semibold">90%</p>
                         </div>
                     </div>
-                    <div className="absolute top-20 right-46">
+                    <div className="absolute top-20 right-46 hidden xl:block">
                         <ArrowCurve1 />
                     </div>
-                    <div className="absolute top-16 right-150">
+                    <div className="absolute top-16 right-150 hidden xl:block">
                         <ArrowCurve2 />
                     </div>
-                    <div className="absolute top-88 right-160">
+                    <div className="absolute top-88 right-160 hidden xl:block">
                         <ArrowCurve3 />
                     </div>
                 </div>
@@ -75,11 +77,11 @@ export default function Home() {
                 <div className="">
                     <img src="./AboutUs.jpg" alt="" className="w-150" />
                 </div>
-                <div className="flex flex-col flex-wrap gap-2 w-1/3 justify-center pl-12">
+                <div className="flex flex-col flex-wrap gap-2 text-center xl:text-left w-full xl:w-1/3 justify-center px-16 xl:pl-12 xl:pr-0">
                     <p className="tracking-wider text-xl text-green-800">About</p>
                     <p className="uppercase text-4xl font-bold leading-relaxed">We Preserve Your <br /> Living World</p>
                     <p className="text-neutral-400">With just a simple scan, you can detect problems early, apply expert treatments, and keep your green spaces thriving. Our mission is to make tree care smarter, easier, and accessible for everyone who loves nature.</p>
-                    <div className="flex flex-row flex-wrap gap-5 pt-5">
+                    <div className="flex flex-row flex-wrap justify-center xl:justify-start gap-5 pt-5">
                         <Link to={'/demo'}>
                             <button className="uppercase bg-lime-500 px-12 py-4 rounded-xl text-white font-semibold hover:shadow-2xl hover:cursor-pointer">Try Now</button>
                         </Link>
