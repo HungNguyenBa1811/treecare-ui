@@ -12,7 +12,7 @@ export default function DefaultLayout({ children }) {
             setActiveTab
         ]}>
             <div className='w-screen transition-all duration-300 ease-in-out'>
-                <Header currentTab={activeTab} />
+                <Header />
                 {children}
                 <Footer />
             </div>

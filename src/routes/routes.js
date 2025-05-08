@@ -2,7 +2,7 @@ import config from '../config';
 
 import Home from '../pages/Home';
 import Demo from '../pages/Demo';
-import SupportUs from '../pages/SupportUs/SupportUs';
+import Prerelease from '../pages/Prerelease';
 
 const publicRoutes = [
     {
@@ -14,9 +14,9 @@ const publicRoutes = [
         component: Demo,
     },
     {
-        path: config.routes.supportus,
-        component: SupportUs,
-    }
+        path: config.routes.prerelease,
+        component: Prerelease,
+    },
 ];
 
-export { publicRoutes }
+export { publicRoutes };

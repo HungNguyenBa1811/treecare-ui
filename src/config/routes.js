@@ -1,7 +1,7 @@
 const routes = {
     home: '/',
     demo: '/demo',
-    supportus: '/supportus'
-}
+    prerelease: '/prerelease',
+};
 
 export default routes

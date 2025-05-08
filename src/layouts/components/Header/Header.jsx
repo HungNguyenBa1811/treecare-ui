@@ -15,8 +15,8 @@ const TabList = [
         path: "/",
     },
     {
-        name: "Support Us",
-        path: "/supportus",
+        name: "Pre-release",
+        path: "/prerelease",
     }
 ]
 
