@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
 import { publicRoutes } from './routes/routes';
 import DefaultLayout from './layouts/DefaultLayout'
 
