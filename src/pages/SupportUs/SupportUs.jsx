@@ -12,7 +12,7 @@ export default function SupportUs() {
             </div>
             <div className='w-100'>
                 <img
-                    src="./QRDonation.jpg"
+                    src="./QRDonation.png"
                     alt="QR code to access premium version"
                 />
             </div>
